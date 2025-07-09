@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kickboxing Klub Blitz Đakovo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Animacije na scroll */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigacija -->
+    <header>
+      <div class="navbar">
+        <div class="left-side">
+          <div class="logo">
+            <img src="log.jpg" alt="KB Blitz logo" />
+          </div>
+        </div>
+        <div class="right-side">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="#pocetna">Početna</a></li>
+              <li><a href="#onama">O nama</a></li>
+              <li><a href="#treninzi">Treninzi</a></li>
+              <li><a href="#galerija">Galerija</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+          <a href="#pridruzi-se" class="btn-join">Pridruži se</a>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="#pocetna">Početna</a></li>
+          <li><a href="#onama">O nama</a></li>
+          <li><a href="#treninzi">Treninzi</a></li>
+          <li><a href="#galerija">Galerija</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero sekcija -->
+    <section class="hero animate-on-scroll" id="pocetna">
+      <div class="hero-content">
+        <h1>
+          <span class="red-text">KICKBOXING KLUB</span><br />
+          BLITZ ĐAKOVO
+        </h1>
+        <p>
+          Dobrodošli u Kickboxing Klub Blitz Đakovo – Snaga, disciplina i
+          zajedništvo na jednom mjestu!
+        </p>
+        <div class="hero-buttons">
+          <a href="#pridruzi-se" class="btn red">Pridruži se nama</a>
+          <a href="#onama" class="btn outline">Saznaj više</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O nama -->
+    <section id="onama" class="about-section animate-on-scroll">
+      <div class="about-container">
+        <div class="about-top">
+          <div class="about-image">
+            <img src="about.jpg" alt="Trening slika" />
+          </div>
+          <div class="about-content">
+            <h2>O nama</h2>
+            <p class="subtitle">
+              Više od 15 godina gradimo najjaču kickboxing zajednicu u Đakovu
+            </p>
+            <h3>Naša misija</h3>
+            <p>
+              Kickboxing Klub Blitz Đakovo osnovan je 2008. godine s ciljem
+              promicanja kickboxinga kao sporta koji razvija fizičku snagu,
+              mentalnu disciplinu i samopoštovanje. Naš klub je dom za borce
+              svih uzrasta i razina.
+            </p>
+            <div class="about-icons">
+              <div class="icon-box">
+                <div class="icon">⚡</div>
+                <h4>Snaga</h4>
+                <p>
+                  Razvijamo fizičku i mentalnu snagu kroz intenzivne treninge
+                </p>
+              </div>
+              <div class="icon-box">
+                <div class="icon">🎯</div>
+                <h4>Disciplina</h4>
+                <p>Učimo samodisciplinu i poštovanje kroz martial arts</p>
+              </div>
+              <div class="icon-box">
+                <div class="icon">🤝</div>
+                <h4>Zajedništvo</h4>
+                <p>Stvaramo jake veze i podržavamo jedni druge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-achievements full-width">
+          <h3><span>🏆</span> Naši uspjesi</h3>
+          <div class="achievements-grid">
+            <div class="achievement-item">
+              <div class="icon-circle">🥇</div>
+              <div class="text">
+                <h4>50+ medalja</h4>
+                <p>Na domaćim i međunarodnim natjecanjima</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <div class="icon-circle">👥</div>
+              <div class="text">
+                <h4>200+ članova</h4>
+                <p>Aktivna i rastuća zajednica</p>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <div class="icon-circle">🎓</div>
+              <div class="text">
+                <h4>Licencirani treneri</h4>
+                <p>S međunarodnim priznanjima i iskustvom</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Treninzi -->
+    <section
+      id="treninzi"
+      class="trainings animate-on-scroll"
+      data-aos-delay="100"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2>Treninzi</h2>
+          <p>
+            Prilagođeni programi za sve uzraste i razine – od početnika do
+            profesionalnih boraca
+          </p>
+        </div>
+        <div class="training-grid">
+          <div class="training-card animate-on-scroll">
+            <div class="training-icon">👶</div>
+            <h3>Djeca (6–12 god)</h3>
+            <p>
+              Kickboxing kroz igru i zabavu. Razvijanje koordinacije, discipline
+              i samopouzdanja.
+            </p>
+            <ul>
+              <li>🕒 Utorak, Četvrtak: 17:00–18:00</li>
+              <li>👥 Maks. 15 djece</li>
+              <li>💶 150 kn/mjesečno</li>
+            </ul>
+          </div>
+          <div class="training-card animate-on-scroll">
+            <div class="training-icon">🎓</div>
+            <h3>Početnici</h3>
+            <p>
+              Učenje osnovnih tehnika, rad na kondiciji i pravilnoj pripremi za
+              trening.
+            </p>
+            <ul>
+              <li>🕒 Ponedjeljak, Srijeda: 19:00–20:30</li>
+              <li>👥 Maks. 20 osoba</li>
+              <li>💶 200 kn/mjesečno</li>
+            </ul>
+          </div>
+          <div class="training-card animate-on-scroll">
+            <div class="training-icon">🔥</div>
+            <h3>Napredni</h3>
+            <p>
+              Intenzivni treninzi, natjecateljske pripreme, tehnike i snaga za
+              borce s iskustvom.
+            </p>
+            <ul>
+              <li>🕒 Utorak, Četvrtak: 20:00–21:30</li>
+              <li>👥 Maks. 15 osoba</li>
+              <li>💶 250 kn/mjesečno</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Raspored -->
+    <section class="schedule-section animate-on-scroll" data-aos-delay="200">
+      <div class="schedule-container">
+        <h2>Raspored treninga</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Dan</th>
+              <th>17:00–18:00</th>
+              <th>19:00–20:30</th>
+              <th>20:00–21:30</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ponedjeljak</td>
+              <td>-</td>
+              <td class="beginner">Početnici</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Utorak</td>
+              <td class="kids">Djeca</td>
+              <td>-</td>
+              <td class="advanced">Napredni</td>
+            </tr>
+            <tr>
+              <td>Srijeda</td>
+              <td>-</td>
+              <td class="beginner">Početnici</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Četvrtak</td>
+              <td class="kids">Djeca</td>
+              <td>-</td>
+              <td class="advanced">Napredni</td>
+            </tr>
+            <tr>
+              <td>Petak</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Treneri -->
+    <section class="trainers-section animate-on-scroll" data-aos-delay="300">
+      <h2 class="section-title">Naši treneri</h2>
+      <div class="trainers-container">
+        <div class="trainer-card animate-on-scroll">
+          <img src="trener1.jpg" alt="Marko Petrović" class="trainer-photo" />
+          <h3>Marko Petrović</h3>
+          <p class="trainer-role">Glavni trener</p>
+          <p class="trainer-bio">
+            15 godina iskustva, WAKO certifikat, bivši reprezentativac
+          </p>
+        </div>
+        <div class="trainer-card animate-on-scroll">
+          <img src="trener2.jpg" alt="Ana Horvat" class="trainer-photo" />
+          <h3>Ana Horvat</h3>
+          <p class="trainer-role">Trener za djecu</p>
+          <p class="trainer-bio">
+            Specijalizirana za rad s djecom, pedagoška edukacija
+          </p>
+        </div>
+        <div class="trainer-card animate-on-scroll">
+          <img src="trener3.jpg" alt="Josip Božić" class="trainer-photo" />
+          <h3>Josip Božić</h3>
+          <p class="trainer-role">Asistent trener</p>
+          <p class="trainer-bio">
+            Aktivan natjecatelj, pomaže u treningu naprednih grupa
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerija -->
+    <section
+      class="gallery-section animate-on-scroll"
+      id="galerija"
+      data-aos-delay="400"
+    >
+      <h2 class="section-title">Galerija</h2>
+      <p class="section-subtitle">
+        Pogledajte trenutke iz naših treninga, natjecanja i klupskih događanja
+      </p>
+      <div class="gallery-grid">
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery1.jpg" alt="Trening" />
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery2.jpg" alt="Priprema" />
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery3.jpg" alt="Vježbanje" />
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery4.jpg" alt="Kodiranje?" />
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery5.jpg" alt="Mrtvo dizanje" />
+        </div>
+        <div class="gallery-item animate-on-scroll">
+          <img src="gallery6.jpg" alt="Ekipa kluba" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section
+      class="contact-section animate-on-scroll"
+      id="kontakt"
+      data-aos-delay="500"
+    >
+      <h2 class="section-title">Kontakt</h2>
+      <p class="section-subtitle">
+        Spremni ste za novi izazov? Kontaktirajte nas i započnite svoj
+        kickboxing put danas!
+      </p>
+      <div class="contact-container">
+        <form class="contact-form">
+          <h3>Pošaljite nam poruku</h3>
+          <label>Ime i prezime *</label>
+          <input type="text" placeholder="Vaše ime i prezime" required />
+          <label>Email adresa *</label>
+          <input type="email" placeholder="vas.email@example.com" required />
+          <label>Program koji vas zanima</label>
+          <select>
+            <option selected disabled>Odaberite program</option>
+            <option>Djeca</option>
+            <option>Početnici</option>
+            <option>Napredni</option>
+          </select>
+          <label>Poruka *</label>
+          <textarea
+            placeholder="Vaša poruka ili pitanje..."
+            required
+          ></textarea>
+          <button type="submit">Pošalji poruku</button>
+        </form>
+        <div class="contact-info">
+          <h3>Informacije o klubu</h3>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> <strong>Adresa</strong
+              ><br />
+              Sportska dvorana<br />
+              Ul. Kralja Tomislava 15<br />
+              31400 Đakovo, Hrvatska
+            </li>
+            <li>
+              <i class="fas fa-phone"></i> <strong>Telefon</strong><br />
+              +385 98 123 4567
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i> <strong>Email</strong><br />
+              info@kbblitzdjakovo.hr
+            </li>
+            <li>
+              <i class="fab fa-facebook-f"></i> <strong>Facebook</strong><br />
+              Kickboxing Klub Blitz Đakovo
+            </li>
+          </ul>
+          <div class="map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.3760039111465!2d18.41274321560397!3d45.31004894930707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c1c77c0d35b17%3A0x7ae6164d18993c63!2sUl.%20kralja%20Tomislava%2015%2C%2031400%2C%20%C4%90akovo!5e0!3m2!1shr!2shr!4v1719869471234"
+              width="100%"
+              height="250"
+              style="border: 0; border-radius: 12px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer animate-on-scroll" data-aos-delay="600">
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <h3><span>KB BLITZ</span> Đakovo</h3>
+          <p>
+            Vaš put prema snazi, disciplini i samopouzdanju počinje ovdje.
+            Pridružite se najjačoj kickboxing zajednici u Đakovu.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Brze veze</h4>
+          <ul>
+            <li><a href="#onama">O nama</a></li>
+            <li><a href="#treninzi">Treninzi</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <p>Ul. Kralja Tomislava 15</p>
+          <p>31400 Đakovo, Hrvatska</p>
+          <p>+385 98 123 4567</p>
+          <p>
+            <a href="mailto:info@kbblitzdjakovo.hr">info@kbblitzdjakovo.hr</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kickboxing Klub Blitz Đakovo. Sva prava pridržana.</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
